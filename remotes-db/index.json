@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-04-19",
+  "last_updated": "2026-04-20",
   "remotes": [
     {
       "id": "samsung-ue-series-tv",
@@ -8,6 +8,13 @@
       "model": "UE Series TV",
       "model_aliases": ["UE32", "UE40", "UE43", "UE50", "UE55", "UE65", "UE75", "TU7100", "TU8000", "Q60", "Q70", "Q80"],
       "file": "remotes/samsung/ue-series-tv.json"
+    },
+    {
+      "id": "philips-pus7304",
+      "make": "Philips",
+      "model": "43PUS7304/12",
+      "model_aliases": ["PUS7304", "398GR08BEPHN0021HL", "YKF456", "Philips 7304"],
+      "file": "remotes/philips/pus7304.json"
     }
   ]
 }
