@@ -1,6 +1,6 @@
 name: IR Config Builder
 description: Build and export IR configs for Broadlink RM4 and ESPHome devices. Live YAML preview with copy/download.
-version: "1.0.11"
+version: "1.0.12"
 slug: ir_config_builder
 init: false
 arch:
