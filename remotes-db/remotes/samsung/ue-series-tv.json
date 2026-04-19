@@ -3,7 +3,7 @@
   "make": "Samsung",
   "model": "UE Series TV",
   "model_aliases": ["UE32", "UE40", "UE43", "UE50", "UE55", "UE65", "UE75", "TU7100", "TU8000", "Q60", "Q70", "Q80"],
-  "image": "https://raw.githubusercontent.com/GingerPrince72/ha-ir-builder-addon/master/remotes-db/images/samsung-ue-series-tv.png",
+  "image": "https://raw.githubusercontent.com/GingerPrince72/ha-ir-builder-addon/master/remotes-db/images/samsung-ue-series-tv.jpg",
   "verified": true,
   "submitted_by": "GingerPrince72",
   "verified_by": "GingerPrince72",
