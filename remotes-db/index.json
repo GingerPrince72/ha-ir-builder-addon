@@ -9,12 +9,5 @@
       "model_aliases": ["UE32", "UE40", "UE43", "UE50", "UE55", "UE65", "UE75", "TU7100", "TU8000", "Q60", "Q70", "Q80"],
       "file": "remotes/samsung/ue-series-tv.json"
     },
-    {
-      "id": "philips-pus7304",
-      "make": "Philips",
-      "model": "43PUS7304",
-      "model_aliases": ["43PUS7304/12", "50PUS7304", "55PUS7304", "65PUS7304", "75PUS7304", "PUS7354", "PUS7504", "7300 Series", "7500 Series"],
-      "file": "remotes/philips/pus7304.json"
-    }
   ]
 }
