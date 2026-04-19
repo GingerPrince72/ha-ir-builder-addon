@@ -4,9 +4,9 @@
   "model": "UE Series TV",
   "model_aliases": ["UE32", "UE40", "UE43", "UE50", "UE55", "UE65", "UE75", "TU7100", "TU8000", "Q60", "Q70", "Q80"],
   "image": "https://raw.githubusercontent.com/GingerPrince72/ha-ir-builder-addon/master/remotes-db/images/samsung-ue-series-tv.jpg",
-  "verified": true,
+  "verified": false,
   "submitted_by": "GingerPrince72",
-  "verified_by": "GingerPrince72",
+  "notes": "Layout mapped; IR codes not yet captured. Set verified=true and populate verified_by once all button codes are recorded via the IR Learner.",
   "buttons": [
     { "id": "power",       "label": "Power",       "x": 50,  "y": 5,   "code": "" },
     { "id": "vol_up",      "label": "Vol +",       "x": 15,  "y": 35,  "code": "" },
