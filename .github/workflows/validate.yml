@@ -1,0 +1,62 @@
+name: Validate
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate every JSON file
+        shell: bash
+        run: |
+          set -euo pipefail
+          fail=0
+          while IFS= read -r f; do
+            if ! node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" >/dev/null 2>&1; then
+              echo "::error file=$f::Invalid JSON"
+              fail=1
+            fi
+          done < <(git ls-files '*.json')
+          if [ "$fail" -ne 0 ]; then exit 1; fi
+          echo "All JSON files parse cleanly."
+
+      - name: Validate remotes-db schema and rules
+        run: node scripts/validate-remotes-db.mjs
+
+      - name: Validate add-on config (repository.yaml + config.yaml)
+        run: node scripts/validate-addon-config.mjs
+
+      - name: Require version bump on PR (when config.yaml changes)
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+          base_sha="${{ github.event.pull_request.base.sha }}"
+          if git diff --name-only "$base_sha"...HEAD | grep -q '^config\.yaml$'; then
+            base_version=$(git show "$base_sha:config.yaml" | awk -F'"' '/^version:/ {print $2; exit}')
+            if [ -z "$base_version" ]; then
+              echo "Could not determine base version; skipping."
+              exit 0
+            fi
+            echo "Base version on master: $base_version"
+            node scripts/validate-addon-config.mjs --check-version-bump "$base_version"
+          else
+            echo "config.yaml unchanged — no version bump required."
+          fi
