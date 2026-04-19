@@ -1,0 +1,67 @@
+{
+  "id": "philips-pus7304",
+  "make": "Philips",
+  "model": "43PUS7304/12",
+  "model_aliases": [
+    "PUS7304",
+    "398GR08BEPHN0021HL",
+    "YKF456",
+    "Philips 7304"
+  ],
+  "image": "https://raw.githubusercontent.com/GingerPrince72/ha-ir-builder-addon/master/remotes-db/images/philips-pus7304.jpg",
+  "verified": false,
+  "submitted_by": "GingerPrince72",
+  "notes": "Initial layout entered 2026-04-19 for end-to-end test of image-guided learning flow. Labels follow the user's annotated photo. Coordinates are best-effort estimates; fine-tune in-app during capture. Flip verified=true and add verified_by once all button codes are captured via the IR Learner.",
+  "buttons": [
+    { "id": "power",       "label": "Power",       "x": 50, "y": 6,  "code": "" },
+    { "id": "ambilight",   "label": "Ambilight",   "x": 50, "y": 12, "code": "" },
+
+    { "id": "options",     "label": "Options",     "x": 23, "y": 19, "code": "" },
+    { "id": "assistant",   "label": "Assistant",   "x": 50, "y": 19, "code": "" },
+    { "id": "source",      "label": "Source",      "x": 77, "y": 19, "code": "" },
+
+    { "id": "up",          "label": "Up",          "x": 50, "y": 27, "code": "" },
+    { "id": "left",        "label": "Left",        "x": 25, "y": 33, "code": "" },
+    { "id": "ok",          "label": "OK",          "x": 50, "y": 33, "code": "" },
+    { "id": "right",       "label": "Right",       "x": 75, "y": 33, "code": "" },
+    { "id": "down",        "label": "Down",        "x": 50, "y": 39, "code": "" },
+
+    { "id": "back",        "label": "Back",        "x": 23, "y": 46, "code": "" },
+    { "id": "home",        "label": "Home",        "x": 50, "y": 46, "code": "" },
+    { "id": "exit",        "label": "Exit",        "x": 77, "y": 46, "code": "" },
+
+    { "id": "rewind",      "label": "Rewind",      "x": 23, "y": 52, "code": "" },
+    { "id": "play",        "label": "Play",        "x": 50, "y": 52, "code": "" },
+    { "id": "forward",     "label": "Forward",     "x": 77, "y": 52, "code": "" },
+
+    { "id": "stop",        "label": "Stop",        "x": 23, "y": 58, "code": "" },
+    { "id": "pause",       "label": "Pause",       "x": 50, "y": 58, "code": "" },
+    { "id": "record",      "label": "Record",      "x": 77, "y": 58, "code": "" },
+
+    { "id": "netflix",     "label": "Netflix",     "x": 50, "y": 66, "code": "" },
+
+    { "id": "vol_up",      "label": "Vol +",       "x": 18, "y": 72, "code": "" },
+    { "id": "mute",        "label": "Mute",        "x": 50, "y": 72, "code": "" },
+    { "id": "ch_up",       "label": "Ch +",        "x": 82, "y": 72, "code": "" },
+
+    { "id": "vol_down",    "label": "Vol -",       "x": 18, "y": 78, "code": "" },
+    { "id": "apps",        "label": "Apps",        "x": 50, "y": 78, "code": "" },
+    { "id": "tv_guide",    "label": "TV Guide",    "x": 82, "y": 78, "code": "" },
+
+    { "id": "num_1",       "label": "1",           "x": 25, "y": 85, "code": "" },
+    { "id": "num_2",       "label": "2",           "x": 50, "y": 85, "code": "" },
+    { "id": "num_3",       "label": "3",           "x": 75, "y": 85, "code": "" },
+
+    { "id": "num_4",       "label": "4",           "x": 25, "y": 89, "code": "" },
+    { "id": "num_5",       "label": "5",           "x": 50, "y": 89, "code": "" },
+    { "id": "num_6",       "label": "6",           "x": 75, "y": 89, "code": "" },
+
+    { "id": "num_7",       "label": "7",           "x": 25, "y": 93, "code": "" },
+    { "id": "num_8",       "label": "8",           "x": 50, "y": 93, "code": "" },
+    { "id": "num_9",       "label": "9",           "x": 75, "y": 93, "code": "" },
+
+    { "id": "text",        "label": "Text",        "x": 25, "y": 97, "code": "" },
+    { "id": "num_0",       "label": "0",           "x": 50, "y": 97, "code": "" },
+    { "id": "subtitle",    "label": "Subtitle",    "x": 75, "y": 97, "code": "" }
+  ]
+}
